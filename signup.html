@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/f01983e040.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body >
+    <main class="flex gap-32 w-full p-10 box-border items-center">
+        <div class="w-2/5 rounded-2xl overflow-hidden">
+            <img class="w-full" src="pattern.png">
+        </div>
+        <div class="w-2/5 flex flex-col items-center">
+            <h1 class="text-4xl font-bold mb-8  text-center">Join Us Today</h1>
+            <p class="font-semibold mb-7">Enter your email and password to register.</p>
+            <form class="w-9/12">
+                <div class="flex flex-col gap-2">
+                    <label class="font-semibold" for="email">Your email</label>
+                    <input class="py-2 px-2.5 border border-gray-400 w-full rounded-lg" type="email" id="email" name="email" placeholder="name@mail.com">
+                </div>
+                <div class="flex items-center gap-4 mt-2 mb-6">
+                    <input type="checkbox" id="terms" name="terms" class="w-4 h-4" >
+                    <label ><span class="text-gray-600 font-semibold text-sm">I agree the</span> <a class="underline">Terms and Conditions</a></label>
+                </div>
+                <button class="w-full justify-center items-center bg-black text-white p-2 rounded-lg mb-7" type="submit">REGISTER NOW</button>
+                <button class="w-full flex gap-3 justify-center items-center bg-white p-3 rounded-lg mb-4 shadow-md font-semibold text-sm" type="submit"><img class="w-4 h-4" src="search.png">SIGN IN WITH GOOGLE</button>
+                <button class="w-full flex gap-3 justify-center items-center bg-white p-3 rounded-lg mb-4 shadow-md font-semibold text-sm" type="submit"><i class="fa-brands fa-x-twitter" style="color: #030303;"></i>SIGN IN WITH TWITTER</button>
+            </form>
+            <p class="text-gray-500 font-semibold">Already have an account? <a class="cursor-pointer text-black">Sign in</a></p>
+        </div>
+    </main>
+</body>
+</html>

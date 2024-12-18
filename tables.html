@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/f01983e040.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body class="bg-slate-100">
+    <div class="my-6 ml-2 py-5 pb-20 w-72  fixed font-semibold left-3 border border-gray-300 rounded-lg bg-white">
+        <h1 class="text-center mb-8 text-lg text-gray-900">Material Tailwind React</h1>
+        <div class="w-10/12 m-auto  flex flex-col gap-1">
+            <a  href="index.html" class=" rounded-md px-4 py-3 text-gray-600 hover:bg-gray-100 flex items-center gap-4">
+                <i class="fa-solid fa-house" style="color: #555555;"></i>
+                <p>Dashboard</p>
+            </a>
+            <a href="profile.html" class="text-gray-600 px-4 py-3 flex rounded-md hover:bg-gray-100 cursor-pointer items-center gap-4">
+                <i class="fa-regular fa-user" style="color: #555555;"></i>
+                <p>Profile</p>
+            </a>
+            <a href="tables.html" class=" bg-gray-900 text-white  px-4 py-3 flex rounded-md  cursor-pointer items-center gap-4">
+                <i class="fa-solid fa-table" style="color: #fff;"></i>
+                <p>Tables</p>
+            </a>
+            <a href="calendar.html" class="text-gray-600 px-4 py-3 flex rounded-md hover:bg-gray-100 cursor-pointer items-center gap-4">
+                <i class="fa-regular fa-calendar" style="color: #555555;"></i>
+                <p>Calendar</p>
+            </a>
+            <a href="location.html" class="text-gray-600 px-4 py-3 flex rounded-md hover:bg-gray-100 cursor-pointer items-center gap-4">
+                <i class="fa-solid fa-location-dot" style="color: #555555;"></i>
+                <p>Location</p>
+            </a>
+            <a href="notifications.html" class="text-gray-600 px-4 py-3 flex rounded-md hover:bg-gray-100 cursor-pointer items-center gap-4">
+                <i class="fa-solid fa-circle-exclamation" style="color: #555555;"></i>
+                <p>Notifications</p>
+            </a>
+        </div>
+        <div class="w-10/12 m-auto  flex flex-col gap-1">
+            <h1 class="px-4 pt-5 text-gray-700 font-bold">AUTH PAGES</h1>
+            <a href="signup.html" class="text-gray-600 px-4 py-3 rounded-md hover:bg-gray-100 cursor-pointer flex items-center gap-4">
+                <i class="fa-solid fa-right-to-bracket" style="color: #555555;"></i>
+                <p>Sign Up</p>
+            </a>
+        </div>
+    </div>
+    <main class="ml-80 pl-3 pt-4">
+        <section>
+            <nav class="pb-14 pr-7">
+                <!-- Navbar-->
+                <div class="flex justify-between items-center">
+                    <div>
+                        <div class="text-sm"><p><span class="text-gray-400">Dashboard </span><span class="text-gray-500"> / </span><span class="text-gray-600">Tables</span></p></div>
+                        <div class="text-gray-700 font-semibold text-lg"><p>Tables</p></div>
+                    </div>
+                    <div class="flex gap-8 items-center">
+                        <div><input class="placeholder-gray-500 border border-gray-400 px-4 py-2 rounded-lg bg-transparent outline-none" type="search" id="search" name="search" placeholder="Search"></div> 
+                        <div class="flex items-center gap-2">
+                            <i class="fa-regular fa-user" style="color: #707070;"></i>
+                            <p class="text-sm text-gray-600 font-semibold">Sign In</p>
+                        </div>
+                        <div><i class="fa-solid fa-bell" style="color: #707070;"></i></div>
+                        <div><i class="fa-solid fa-gear" style="color: #707070;"></i></div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <!-- tables.html -->
+         
+            <div class=" ml-9 mr-12">
+                <p class="relative z-10 bg-black rounded-lg p-7 w-full h-20 text-white font-bold">Authors Table</p>
+            </div>
+            <div class="relative z-2 bottom-14 overflow-x-auto shadow-md ml-3 mr-6 rounded-xl pt-24 pb-4 text-gray-500 bg-white">
+                <table class="w-full text-sm text-left rtl:text-right ">
+                    <thead class="text-xs border-b uppercase bg-white  ">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">
+                                AUTHOR
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                FUNCTION
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                STATUS
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                EMPLOYES
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white border-b ">
+                            <th scope="row" class="px-6 py-3 font-medium  whitespace-nowrap ">
+                                <div class="flex gap-4">
+                                    <div class="w-9 h-9 rounded-lg overflow-hidden">
+                                        <img class="w-full" src="person1.jpeg">
+                                    </div>
+                                    <div>
+                                        <h1 class="text-gray-700 font-bold">Ahmed Khalid</h1>
+                                        <p class="text-xs">ahmed@creative-tim.com</p>
+                                    </div>
+                                </div>
+                            </th>
+                            <td class="px-6 py-3">
+                                <p class=" font-bold text-sm">Manager</p>
+                                <p class="text-xs">Organization</p>
+                            </td>
+                            <td class="px-6 py-3">
+                                <div class="bg-green-600 text-white h-5 w-8/12 text-xs text-center rounded-lg font-semibold"><p>ONLINE</p></div>
+                            </td>
+                            <td class="px-6 py-3 font-bold text-xs text-gray-600">
+                                23/04/18
+                            </td>
+                            <td class="px-6 py-3">
+                                <a href="index.html" class="font-bold hover:cursor-pointer text-sm text-gray-600">Edit</a>
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b ">
+                            <th scope="row" class="px-6 py-3 font-medium whitespace-nowrap dark:text-white">
+                                <div class="flex gap-4">
+                                    <div class="w-9 h-9 rounded-lg overflow-hidden">
+                                        <img class="w-full" src="person2.jpeg">
+                                    </div>
+                                    <div>
+                                        <h1 class="text-gray-700 font-bold">Fatima Zayed</h1>
+                                        <p class="text-xs">fatima@creative-tim.com</p>
+                                    </div>
+                                </div>
+                            </th>
+                            <td class="px-6 py-3">
+                                <p class=" font-bold text-sm">Programator</p>
+                                <p class="text-xs">Developer</p>
+                            </td>
+                            <td class="px-6 py-3">
+                                <div class=" font-semibold bg-gray-500 text-white h-5 w-8/12 text-xs text-center rounded-lg"><p>OFFLINE</p></div>
+                            </td>
+                            <td class="px-6 py-3 font-bold text-xs text-gray-600">
+                                11/01/19
+                            </td>
+                            <td class="px-6 py-3">
+                                <a href="index.html" class="hover:cursor-pointer font-bold text-sm text-gray-600">Edit</a>
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b">
+                            <th scope="row" class="px-6 py-3 font-medium whitespace-nowrap dark:text-white">
+                                <div class="flex gap-4">
+                                    <div class="w-9 h-9 rounded-lg overflow-hidden">
+                                        <img class="w-full" src="person3.jpeg">
+                                    </div>
+                                    <div>
+                                        <h1 class="text-gray-700 font-bold">Omar Youssef</h1>
+                                        <p class="text-xs">omar@creative-tim.com</p>
+                                    </div>
+                                </div>
+                            </th>
+                            <td class="px-6 py-3">
+                                <p class=" font-bold text-sm">Executive</p>
+                                <p class="text-xs">Projects</p>
+                            </td>
+                            <td class="px-6 py-3">
+                                <div class="bg-green-600  font-semibold text-white h-5 w-8/12 text-xs text-center rounded-lg"><p>ONLINE</p></div>
+                            </td>
+                            <td class="px-6 py-3 font-bold text-xs text-gray-600">
+                                19/09/17
+                            </td>
+                            <td class="px-6 py-3">
+                                <a href="index.html" class="hover:cursor-pointer font-bold text-sm text-gray-600">Edit</a>
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b ">
+                            <th scope="row" class="px-6 py-3 font-medium  whitespace-nowrap dark:text-white">
+                                <div class="flex gap-4">
+                                    <div class="w-9 h-9 rounded-lg overflow-hidden">
+                                        <img class="w-full" src="person1.jpeg">
+                                    </div>
+                                    <div>
+                                        <h1 class="text-gray-700 font-bold">Aisha Hani</h1>
+                                        <p class="text-xs">aicha@creative-tim.com</p>
+                                    </div>
+                                </div>
+                            </th>
+                            <td class="px-6 py-3">
+                                <p class=" font-bold text-sm">Programator</p>
+                                <p class="text-xs">Developer</p>
+                            </td>
+                            <td class="px-6 py-3">
+                                <div class="bg-green-600  font-semibold text-white h-5 w-8/12 text-xs text-center rounded-lg"><p>ONLINE</p></div>
+                            </td>
+                            <td class="px-6 py-3 font-bold text-xs text-gray-600">
+                                24/12/08
+                            </td>
+                            <td class="px-6 py-3">
+                                <a href="index.html" class="hover:cursor-pointer font-bold text-sm text-gray-600">Edit</a>
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b ">
+                            <th scope="row" class="px-6 py-3 font-medium  whitespace-nowrap dark:text-white">
+                                <div class="flex gap-4">
+                                    <div class="w-9 h-9 rounded-lg overflow-hidden">
+                                        <img class="w-full" src="person2.jpeg">
+                                    </div>
+                                    <div>
+                                        <h1 class="text-gray-700 font-bold">Mohammed Salem</h1>
+                                        <p class="text-xs">mohammed@creative-tim.com</p>
+                                    </div>
+                                </div>
+                            </th>
+                            <td class="px-6 py-3">
+                                <p class=" font-bold text-sm">Manager</p>
+                                <p class="text-xs">Executive</p>
+                            </td>
+                            <td class="px-6 py-3">
+                                <div class=" font-semibold bg-gray-500 text-white h-5 w-8/12 text-xs text-center rounded-lg"><p>OFFLINE</p></div>
+                            </td>
+                            <td class="px-6 py-3 font-bold text-xs text-gray-600">
+                                04/10/21
+                            </td>
+                            <td class="px-6 py-3">
+                                <a href="index.html" class="hover:cursor-pointer font-bold text-sm text-gray-600">Edit</a>
+                            </td>
+                        </tr>
+                        <tr class="bg-white">
+                            <th scope="row" class="px-6 py-3 font-medium whitespace-nowrap dark:text-white">
+                                <div class="flex gap-4">
+                                    <div class="w-9 h-9 rounded-lg overflow-hidden">
+                                        <img class="w-full" src="person3.jpeg">
+                                    </div>
+                                    <div>
+                                        <h1 class="text-gray-700 font-bold">Leila Nour</h1>
+                                        <p class="text-xs">leila@creative-tim.com</p>
+                                    </div>
+                                </div>
+                            </th>
+                            <td class="px-6 py-3">
+                                <p class=" font-bold text-sm">Programator</p>
+                                <p class="text-xs">Developer</p>
+                            </td>
+                            <td class="px-6 py-3">
+                                <div class="bg-gray-500 text-white h-5 w-8/12 text-xs text-center rounded-lg font-semibold"><p>OFFLINE</p></div>
+                            </td>
+                            <td class="px-6 py-3 font-bold text-xs text-gray-600">
+                                14/09/20
+                            </td>
+                            <td class="px-6 py-3">
+                                <a href="index.html" class="hover:cursor-pointer font-bold text-sm text-gray-600">Edit</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- second table-->
+            <div class=" ml-9 mr-12">
+                <p class="relative z-10 bg-black rounded-lg p-7 w-full h-20 text-white font-bold">Projects Table</p>
+            </div>
+            <div class="relative z-2 bottom-14 overflow-x-auto shadow-md ml-3 mr-6 rounded-xl pt-24 pb-4 text-gray-500 bg-white">
+                <table class="w-full text-sm text-left rtl:text-right ">
+                    <thead class="text-xs border-b uppercase bg-white  ">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">
+                                companies
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                members
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                budget
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                completion
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white border-b ">
+                            <th scope="row" class="px-6 py-3 font-medium  whitespace-nowrap ">
+                                <div class="flex gap-4">
+                                    <div class="w-11 h-11 rounded-lg overflow-hidden">
+                                        <img class="w-full" src="logo1.svg">
+                                    </div>
+                                    <div>
+                                        <h1 class="text-gray-700 font-bold">Material XD Version</h1>
+                                    </div>
+                                </div>
+                            </th>
+                            <td class="px-6 py-3 flex">
+                                <div class="w-7 h-7 border-2 border-white rounded-full relative z-3">
+                                    <img class=" rounded-full w-6 h-6" src="person1.jpeg">
+                                </div>
+                                <div class="w-7 h-7 border-2 border-white rounded-full relative z-4 right-2">
+                                    <img class=" rounded-full w-6 h-6" src="person2.jpeg">
+                                </div>
+                                <div class="w-7 h-7 border-2 border-white rounded-full relative z-5 right-4">
+                                    <img class=" rounded-full w-6 h-6" src="person3.jpeg">
+                                </div>
+                                <div class="w-7 h-7 border-2 border-white rounded-full relative z-6 right-6">
+                                    <img class=" rounded-full w-6 h-6" src="person1.jpeg">
+                                </div>
+                            </td>
+                            <td class="px-6 py-3">
+                                <p>$14,000</p>
+                            <td class="px-6 py-3 font-bold text-xs text-gray-600">
+                                <div class="mb-1">
+                                    <span class="text-xs font-medium text-gray-600 ">60%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-1">
+                                    <div class="bg-black h-1 rounded-full" style="width: 60%"></div>
+                                </div>
+                            </td>
+                            <td class="px-6 py-3">
+                                <a href="index.html">
+                                    <img src="icon-more.png">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b ">
+                            <th scope="row" class="px-6 py-3 font-medium whitespace-nowrap dark:text-white">
+                                <div class="flex gap-4">
+                                    <div class="w-11 h-11 rounded-lg overflow-hidden">
+                                        <img class="w-full" src="logo2.svg">
+                                    </div>
+                                    <div>
+                                        <h1 class="text-gray-700 font-bold">Add Progress Track</h1>
+                                    </div>
+                                </div>
+                            </th>
+                            <td class="px-6 py-3 flex">
+                                <div class="w-7 h-7 border-2 border-white rounded-full relative z-3 ">
+                                   <img class="rounded-full w-6 h-6" src="person2.jpeg"> 
+                                </div>
+                                <div class="w-7 h-7 border-2 border-white rounded-full relative z-4 right-2">
+                                   <img class=" rounded-full w-6 h-6" src="person1.jpeg"> 
+                                </div>
+                            </td>
+                            <td class="px-6 py-3">
+                                <p>$3,000</p>
+                            </td>
+                            <td class="px-6 py-3 font-bold text-xs text-gray-600">
+                                <div class="mb-1">
+                                    <span class="text-xs font-medium text-gray-600 ">10%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-1">
+                                    <div class="bg-black h-1 rounded-full" style="width: 10%"></div>
+                                </div>
+                            </td>
+                            <td class="px-6 py-3">
+                                <a href="index.html">
+                                    <img src="icon-more.png">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b">
+                            <th scope="row" class="px-6 py-3 font-medium whitespace-nowrap dark:text-white">
+                                <div class="flex gap-4">
+                                    <div class="w-11 h-11 rounded-lg overflow-hidden">
+                                        <img class="w-full" src="logo3.svg">
+                                    </div>
+                                    <div>
+                                        <h1 class="text-gray-700 font-bold">Fix Platform Errors</h1>
+                                    </div>
+                                </div>
+                            </th>
+                            <td class="px-6 py-3 flex">
+                                <div class="w-7 h-7 border-2 border-white rounded-full relative z-3">
+                                    <img class="  rounded-full w-6 h-6" src="person1.jpeg">
+                                </div>
+                                <div class="w-7 h-7 border-2 border-white rounded-full relative z-4 right-2">
+                                    <img class=" rounded-full w-6 h-6" src="person3.jpeg">
+                                </div>
+                                
+                            </td>
+                            <td class="px-6 py-3">
+                                <p>Not set</p>
+                            </td>
+                            <td class="px-6 py-3 font-bold text-xs text-gray-600">
+                                <div class="mb-1">
+                                    <span class="text-xs font-medium text-gray-600 ">100%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-1">
+                                    <div class="bg-green-600 h-1 rounded-full" style="width: 100%"></div>
+                                </div>
+                            </td>
+                            <td class="px-6 py-3">
+                                <a href="index.html">
+                                    <img src="icon-more.png">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b ">
+                            <th scope="row" class="px-6 py-3 font-medium  whitespace-nowrap dark:text-white">
+                                <div class="flex gap-4">
+                                    <div class="w-11 h-11 rounded-lg overflow-hidden">
+                                        <img class="w-full" src="logo4.svg">
+                                    </div>
+                                    <div>
+                                        <h1 class="text-gray-700 font-bold">Launch our Mobile App</h1>
+                                    </div>
+                                </div>
+                            </th>
+                            <td class="px-6 py-3 flex">
+                                <div class="w-7 h-7 border-2 border-white rounded-full relative z-3">
+                                    <img class=" rounded-full w-6 h-6" src="person2.jpeg">
+                                </div>
+                                <div class="w-7 h-7 border-2 border-white rounded-full relative z-4 right-2">
+                                    <img class=" rounded-full w-6 h-6" src="person1.jpeg">
+                                </div>
+                                <div class="w-7 h-7 border-2 border-white rounded-full relative z-5 right-4">
+                                    <img class=" rounded-full w-6 h-6" src="person2.jpeg">
+                                </div>
+                                <div class="w-7 h-7 border-2 border-white rounded-full relative z-6 right-6">
+                                    <img class=" rounded-full w-6 h-6" src="person3.jpeg">
+                                </div>
+                            </td>
+                            <td class="px-6 py-3">
+                                <p>$20,500</p>
+                            </td>
+                            <td class="px-6 py-3 font-bold text-xs text-gray-600">
+                                <div class="mb-1">
+                                    <span class="text-xs font-medium text-gray-600 ">100%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-1">
+                                    <div class="bg-green-600 h-1 rounded-full" style="width: 100%"></div>
+                                </div>
+                            </td>
+                            <td class="px-6 py-3">
+                                <a href="index.html">
+                                    <img src="icon-more.png">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b ">
+                            <th scope="row" class="px-6 py-3 font-medium  whitespace-nowrap dark:text-white">
+                                <div class="flex gap-4">
+                                    <div class="w-11 h-11 rounded-lg overflow-hidden">
+                                        <img class="w-full" src="logo5.svg">
+                                    </div>
+                                    <div>
+                                        <h1 class="text-gray-700 font-bold">Add the New Pricing Page</h1>
+                                    </div>
+                                </div>
+                            </th>
+                            <td class="px-6 py-3">
+                                <div class="w-7 h-7 border-2 border-white rounded-full ">
+                                    <img class="rounded-full w-6 h-6" src="person2.jpeg">
+                                </div>
+                            </td>
+                            <td class="px-6 py-3">
+                                $500
+                            </td>
+                            <td class="px-6 py-3 font-bold text-xs text-gray-600">
+                                <div class="mb-1">
+                                    <span class="text-xs font-medium text-gray-600 ">25%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-1">
+                                    <div class="bg-black h-1 rounded-full" style="width: 25%"></div>
+                                </div>
+                            </td>
+                            <td class="px-6 py-3">
+                                <a href="index.html">
+                                    <img src="icon-more.png">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="bg-white">
+                            <th scope="row" class="px-6 py-3 font-medium whitespace-nowrap dark:text-white">
+                                <div class="flex gap-4">
+                                    <div class="w-11 h-11 rounded-lg overflow-hidden">
+                                        <img class="w-full" src="logo6.svg">
+                                    </div>
+                                    <div>
+                                        <h1 class="text-gray-700 font-bold">Redesign New Online Shop</h1>
+                                    </div>
+                                </div>
+                            </th>
+                            <td class="px-6 py-3 flex">
+                                <div class="w-7 h-7 border-2 border-white rounded-full relative z-3">
+                                    <img class="rounded-full w-6 h-6" src="person3.jpeg">
+                                </div>
+                                <div class="w-7 h-7 border-2 border-white rounded-full relative z-4 right-2">
+                                    <img class="rounded-full w-6 h-6" src="person2.jpeg">
+                                </div>
+                                
+                            </td>
+                            <td class="px-6 py-3">
+                                <p>$2,000</p>
+                            </td>
+                            <td class="px-6 py-3 font-bold text-xs text-gray-600">
+                                <div class="mb-1">
+                                    <span class="text-xs font-medium text-gray-600 ">40%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-1">
+                                    <div class="bg-black h-1 rounded-full" style="width: 40%"></div>
+                                </div>
+                            </td>
+                            <td class="px-6 py-3">
+                                <a href="index.html">
+                                    <img src="icon-more.png">
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        <!-- End -->
+        <section><div class="fixed right-4 bottom-4 h-12 w-12 rounded-full text-center pt-3 bg-white"><i class="fa-solid fa-gear fa-xl" style="color: #525151;"></i></div></section>
+    </main>
+    <footer class="ml-80 pl-3 pr-7 mb-3 text-gray-500 flex justify-between">
+        <div><p>© 2024, made with &#128151;  by <a class="font-semibold hover:text-blue-400 cursor-pointer">Hafsa</a>  for a better web.</p></div>
+        <div>
+            <ul class="flex gap-4">
+                <li class="hover:text-blue-400 cursor-pointer"><a>Hafsa</a></li>
+                <li class="hover:text-blue-400 cursor-pointer"><a>About Us</a></li>
+                <li class="hover:text-blue-400 cursor-pointer"><a>Blog</a></li>
+                <li class="hover:text-blue-400 cursor-pointer"><a>License</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
